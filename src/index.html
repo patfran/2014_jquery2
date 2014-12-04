@@ -20,12 +20,46 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+		
+		<form action="" method="post" id="register-form" novalidate="novalidate">
+			<h2> Form testing! </h2>
+			<div id="form-content">
+				<fieldset>
+					<div class="fieldgroup">
+						<label for="firstname">First Name</label>
+						<input type="text" name="firstname"/>
+					</div>
 
+					<div class="fieldgroup">
+						<label for="lastname">Last Name</label>
+						<input type="text" name="lastname"/>
+					</div>
+
+					<div class="fieldgroup">
+						<label for="email">Email</label>
+						<input type="text" name="email"/>
+					</div>
+
+					<div class="fieldgroup">
+						<label for="password">Password</label>
+						<input type="password" name="password"/>
+					</div>
+				
+					<div class="fieldgroup">
+						<p> Agree to our terms! </p>
+						<input type="submit" value="Register" class="submit"/>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+		
+		
         <script src="js/vendor/jquery.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+		
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
